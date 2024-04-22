@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Рестики</title>
+  
+  <link rel="website icon" type="png"
+    href="C:\Users\Станислав\OneDrive - УО “Алматы Менеджмент Университет”\Рабочий стол\rest1\photo\logo.png">
+  <link rel="stylesheet" href="style3.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+
+<body>
+
+	<header>
+    
+
+        <section class="conteiner1">
+                <form>
+                    <i class="fas fa-search"></i>
+                    <input type="text" name="" id="search-item" placeholder="Search products">
+                </form>
+        
+            </section>
+
+            <ul>
+            </ul>
+            <input type="checkbox" id="nav_check" hidden>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html" class="active lang" key="басты бет">Главная</a>
+                    </li>
+                    <li>
+                        <a href="новости.html" class="active lang" key="жаңалықтар">Новости</a>
+                    </li>
+                    <li>
+                        <a href="Рестораны.html" class="active lang" key="мейрамханалар">Рестораны</a>
+                    </li>
+                    <li>
+                        <a href="онас.html" class="active lang" key="біз туралы">О нас</a>
+                    </li>
+                    <li>
+                        <a href="Вход.html" class="active lang" key="басты бет">вход/рег</a>
+                    </li>
+                </ul>
+            </nav>
+            <label for="nav_check" class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+        </header>
+        <div class="app">
+	<script src="app.js"></script>
+
+	<select id="categoryFilter">
+		<option value="all">Все категории</option>
+		<option value="итальянская кухня">Итальянская кухня</option>
+		<option value="морепродукты">Морепродукты</option>
+		<option value="мясной">Мясной</option>
+		<option value="казахская кухня">Казахская кухня</option>
+		<option value="грузинская кухня">Грузинская кухня</option>
+	</select>
+</div>
+
+	<div class="container">
+
+		<h1 class="heading">Рестораны</h1>
+	
+		<div class="box-container" id="restaurantContainer">
+	
+			<div class="box" data-categories="морепродукты">
+				<img src="https://i2.photo.2gis.com/images/branch/0/30258560067508220_969e_328x170.jpg" alt="">
+				<h3>Ocean basket</h3>
+				<a href="https://2gis.kz/almaty/firm/70000001031632899" class="btn">2gis</a>
+				<a href="https://www.instagram.com/oceanbasket.kz/" class="btn">inst</a>
+				<a href="oceanbascet1.html" class="btn">Menu</a>
+			</div>
+            <div class="box" data-categories="Мясной">
+				<img src="https://avatars.mds.yandex.net/get-altay/5548986/2a00000183476b4ff15d91d3363bcbcf1004/L_height" alt="">
+				<h3>Огонёк</h3>
+				<a href="https://2gis.kz/almaty/search/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/rubricId/164/firm/70000001056260786/76.94485%2C43.252949" class="btn">2gis</a>
+				<a href="https://www.instagram.com/ogonek.almaty/" class="btn">inst</a>
+			</div>
+            <div class="box" data-categories="казахская кухня">
+				<img src="https://media-cdn.tripadvisor.com/media/photo-s/26/c0/7f/a1/caption.jpg" alt="">
+				<h3>Rifugio del Monte </h3>
+				<a href="https://2gis.kz/almaty/search/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/rubricId/164/filters/rating_rating_perfect/firm/70000001064217225/77.080015%2C43.126569?m=77.080015%2C43.126569%2F16" class="btn">2gis</a>
+				<a href="https://www.instagram.com/rifugio_del_monte/" class="btn">inst</a>
+			</div>
+            <div class="box" data-categories="грузинская кухня">
+				<img src="https://avatars.mds.yandex.net/get-altay/5596516/2a0000017f949ecb61c4cc6f4fe7602b12ca/L_height" alt="">
+				<h3>Praha</h3>
+				<a href="https://2gis.kz/almaty/search/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/rubricId/164/firm/70000001044212656/76.963098%2C43.222957?m=76.963098%2C43.222957%2F16" class="btn">2gis</a>
+				<a href="https://www.instagram.com/praha.almaty/" class="btn">inst</a>
+			</div>
+            <div class="box" data-categories="мясной">
+				<img src="https://i4.photo.2gis.com/images/branch/0/30258560098699024_0f91_328x170.jpg" alt="">
+				<h3>Magic Ville </h3>
+				<a href="https://2gis.kz/almaty/search/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/rubricId/164/firm/70000001066687924/76.951275%2C43.232715?m=76.951275%2C43.232715%2F16" class="btn">2gis</a>
+				<a href="https://www.instagram.com/magicville_kz/" class="btn">inst</a>
+			</div>
+            <div class="box" data-categories="грузинская кухня">
+				<img src="https://strg1.restoran.kz/neofiles/serve-image/5bd17ce2d06291793ae78321/1280x720/q70" alt="">
+				<h3>ТАНУКИ</h3>
+				<a href="https://2gis.kz/almaty/search/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/rubricId/164/firm/70000001078526241/76.934305%2C43.245334?m=76.934305%2C43.245334%2F16" class="btn">2gis</a>
+				<a href="https://www.instagram.com/tanuki_kz/" class="btn">inst</a>
+			</div>
+            <div class="box" data-categories="казахская кухня">
+				<img src="https://avatars.mds.yandex.net/get-altay/7636462/2a0000018756a1329929668bacc95ea0d4a7/L_height" alt="">
+				<h3>Sagamo </h3>
+				<a href="https://2gis.kz/almaty/search/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/rubricId/164/firm/70000001061018883/76.924122%2C43.25539?m=76.924122%2C43.25539%2F16" class="btn">2gis</a>
+				<a href="https://www.instagram.com/sagamo_restaurant_karaoke/" class="btn">inst</a>
+			</div>
+            <div class="box" data-categories="итальянская кухня">
+				<img src="https://restolife.kz/upload/information_system_6/2/5/5/item_25566/information_items_property_32751.jpg" alt="">
+				<h3>Ezo </h3>
+				<a href="https://2gis.kz/almaty/search/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/rubricId/164/firm/70000001064085002/76.947891%2C43.253184?m=76.947891%2C43.253184%2F16" class="btn">2gis</a>
+				<a href="https://www.instagram.com/ezo.almaty/" class="btn">inst</a>
+			</div>
+            <div class="box" data-categories="морепродукты">
+				<img src="https://i.ytimg.com/vi/G5ZVZsYKgRs/maxresdefault.jpg" alt="">
+				<h3>TomYumBar </h3>
+				<a href="https://2gis.kz/almaty/search/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B/rubricId/164/firm/70000001058785497/76.933414%2C43.251769?m=76.933414%2C43.251769%2F16" class="btn">2gis</a>
+				<a href="https://www.instagram.com/tomyumbar.almaty/" class="btn">inst</a>
+			</div>
+	</div>
+	
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const searchForm = document.getElementById('searchForm');
+        const restaurantContainer = document.getElementById('restaurantContainer');
+
+        searchForm.addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent form submission
+            const searchItem = document.getElementById('searchItem').value.toLowerCase();
+            const boxes = restaurantContainer.getElementsByClassName('box');
+            Array.from(boxes).forEach(function (box) {
+                const title = box.getElementsByTagName('h3')[0].innerText.toLowerCase();
+                if (title.includes(searchItem)) {
+                    box.style.display = 'block';
+                } else {
+                    box.style.display = 'none';
+                }
+            });
+        });
+    });
+
+	document.addEventListener("DOMContentLoaded", function () {
+    const categoryFilter = document.getElementById('categoryFilter');
+    const boxes = document.querySelectorAll('.box');
+
+    categoryFilter.addEventListener('change', function () {
+        const selectedCategory = this.value;
+
+        boxes.forEach(function (box) {
+            const categories = box.getAttribute('data-categories').split(', ');
+
+            if (selectedCategory === 'all' || categories.includes(selectedCategory)) {
+                box.style.display = 'block';
+            } else {
+                box.style.display = 'none';
+            }
+        });
+    });
+
+    const searchForm = document.getElementById('searchForm');
+    searchForm.addEventListener('submit', function (e) {
+        e.preventDefault(); // Prevent form submission
+        const searchItem = document.getElementById('searchItem').value.toLowerCase();
+
+        boxes.forEach(function (box) {
+            const title = box.getElementsByTagName('h3')[0].innerText.toLowerCase();
+            if (title.includes(searchItem)) {
+                box.style.display = 'block';
+            } else {
+                box.style.display = 'none';
+            }
+        });
+    });
+});
+		
+	
+</script>
+</body>
+</html>
