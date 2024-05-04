@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="вход.css">
+    <link rel="stylesheet" href="registration.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -38,18 +38,26 @@
     <div class="wrapper">
         <form action="">
                 <h1>Вход/Регист</h1>
-                <div class="input-box">
+                <div class="wrapper">
                     <input type="text" placeholder="Username"
                     required>
                 </div>
-                <div class="input-box">
+                <div class="wrapper">
                     <input type="Password" placeholder="Password"
                     required>
                 </div>
-                <div class="remember-forgot">
+                <div class="btn">
                     <label><input type="checkbox">Remember me</label>
                     <a href="#">Forgot password?</a>
                 </div>
+                <div class="wrapper">
+                <form method="post="
+                enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">Upload</button>
+            </div>
+            </form>
         </form>
     </div>
 </body>
